@@ -4,7 +4,7 @@ import os
 
 
 def start(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text(f'Olá, {update.effective_user.first_name}!Josemaria aqui 🙋‍♂️ \nSalve Maria Santíssima e viva Cristo Rei.')
+    update.message.reply_text(f'Olá, {update.effective_user.first_name}! Josemaria aqui 🙋‍♂️ \nSalve Maria Santíssima e viva Cristo Rei.')
 
 updater = Updater(os.environ.get("TOKEN"), use_context=True)
 
