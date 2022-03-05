@@ -3,7 +3,7 @@ from telegram.ext import Updater, CommandHandler, CallbackContext
 import os
 
 def start(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text(f'Hello {update.effective_user.first_name}\nI am a sample Telegram bot made with python-telegram-bot!')
+    update.message.reply_text(f'Olá {update.effective_user.first_name}\n! Josemaria aqui 🙋‍♂️ Salve Maria Santíssima e viva Cristo Rei.')
 
 updater = Updater(os.environ.get("TOKEN"), use_context=True)
 
