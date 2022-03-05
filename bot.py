@@ -1,6 +1,6 @@
-#from telegram import Update
-#from telegram.ext import Updater, CommandHandler, CallbackContext
-#import os
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, CallbackContext
+import os
 
 
 import asyncio
@@ -65,14 +65,14 @@ import asyncio
 
 
 
-#def start(update: Update, context: CallbackContext) -> None:
-  #  update.message.reply_text(f'Olá, {update.effective_user.first_name}!\nJosemaria aqui 🙋‍♂️ \nSalve Maria Santíssima e viva Cristo Rei.')
+def start(update: Update, context: CallbackContext) -> None:
+    update.message.reply_text(f'Olá, {update.effective_user.first_name}!\nJosemaria aqui 🙋‍♂️ \nSalve Maria Santíssima e viva Cristo Rei.')
 
-#updater = Updater(os.environ.get("TOKEN"), use_context=True)
+updater = Updater(os.environ.get("TOKEN"), use_context=True)
 
-#updater.dispatcher.add_handler(CommandHandler('start', start))
+updater.dispatcher.add_handler(CommandHandler('start', start))
 
-#print("Bot started successfully")
+print("Bot started successfully")
 
-#updater.start_polling()
-#updater.idle()
+updater.start_polling()
+updater.idle()
